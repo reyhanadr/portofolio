@@ -116,36 +116,43 @@ const createI18nContent = (t) => {
             title: t("about.technical.title"),
             skills: [
                 {
-                    title: 'Figma',
-                    description: <>{t("about.technical.skills.Figma.description")}</>,
-                    images: [
-                        {
-                            src: '/images/projects/project-01/cover-02.jpg',
-                            alt: 'Project image',
-                            width: 16,
-                            height: 9
-                        },
-                        {
-                            src: '/images/projects/project-01/cover-03.jpg',
-                            alt: 'Project image',
-                            width: 16,
-                            height: 9
-                        },
-                    ]
+                    title: 'Codeigniter',
+                    level: <>{t("about.technical.skills.Codeigniter.description")}</>,
                 },
                 {
-                    title: 'Next.js',
-                    description: <>{t("about.technical.skills.Nextjs.description")}</>, // "." not accepted in next-intl namespace
-                    images: [
-                        {
-                            src: '/images/projects/project-01/cover-04.jpg',
-                            alt: 'Project image',
-                            width: 16,
-                            height: 9
-                        },
-                    ]
+                    title: 'PHP',
+                    level: <>{t("about.technical.skills.PHP.description")}</>,
+                },
+                {
+                    title: 'MySQL/PhpMyAdmin',
+                    level: <>{t("about.technical.skills.MySQL.description")}</>,
+                },
+                {
+                    title: 'Model View Controller (MVC)',
+                    level: <>{t("about.technical.skills.MVC.description")}</>,
+                },
+                {
+                    title: 'Software Design',
+                    level: <>{t("about.technical.skills.SoftwareDesign.description")}</>,
+                },
+                {
+                    title: 'UML Design',
+                    level: <>{t("about.technical.skills.UMLDesign.description")}</>,
+                },
+                {
+                    title: 'WordPress',
+                    level: <>{t("about.technical.skills.WordPress.description")}</>,
+                },
+                {
+                    title: 'AGILE Methodology',
+                    level: <>{t("about.technical.skills.AGILE.description")}</>,
+                },
+                {
+                    title: 'API Integration',
+                    level: <>{t("about.technical.skills.APIIntegration.description")}</>,
                 }
             ]
+            
         }
     }
 
