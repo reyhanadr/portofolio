@@ -80,7 +80,7 @@ const about = {
             {
                 name: 'University of Jenderal Achmad Yani',
                 timeStudies: '2020 - 2024',
-                degree: 'Bachelof of Computer',
+                degree: 'Bachelor of Computer',
                 description: <>During my time at Jenderal Achmad Yani University, I focused on learning and applying web-based software development. I practiced these skills through various projects, developing websites and enhancing my understanding of real-world software development.</>,
             }
         ]
