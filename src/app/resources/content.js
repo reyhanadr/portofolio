@@ -1,13 +1,13 @@
 import { InlineCode } from "@/once-ui/components";
 
 const person = {
-    firstName: 'Selene',
-    lastName:  'Yu',
+    firstName: 'Reyhan Adriana',
+    lastName:  'Deris',
     get name() {
         return `${this.firstName} ${this.lastName}`;
     },
-    role:      'Design Engineer',
-    avatar:    '/images/avatar.jpg',
+    role:      'Fullstack Web Developer',
+    avatar:    '/images/avatar.webp',
     location:  'Asia/Jakarta',        // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
     languages: ['English', 'Bahasa']  // optional: Leave the array empty if you don't want to display languages
 }
@@ -24,12 +24,12 @@ const social = [
     {
         name: 'GitHub',
         icon: 'github',
-        link: 'https://github.com/once-ui-system/nextjs-starter',
+        link: 'https://github.com/reyhanadr',
     },
     {
         name: 'LinkedIn',
         icon: 'linkedin',
-        link: 'https://www.linkedin.com/company/once-ui/',
+        link: 'https://www.linkedin.com/in/reyhan-adriana-deris/',
     },
     {
         name: 'X',
@@ -39,7 +39,7 @@ const social = [
     {
         name: 'Email',
         icon: 'email',
-        link: 'mailto:example@gmail.com',
+        link: 'mailto:reyhanadr@outlook.com',
     },
 ]
 
@@ -47,8 +47,10 @@ const home = {
     label: 'Home',
     title: `${person.name}'s Portfolio`,
     description: `Portfolio website showcasing my work as a ${person.role}`,
-    headline: <>Design engineer and builder</>,
-    subline: <>I'm Selene, a design engineer at <InlineCode>FLY</InlineCode>, where I craft intuitive<br/> user experiences. After hours, I build my own projects.</>
+    headline: <>Fullstack Web Developer</>,
+    // subline: <>I'm Reyhanadr, a Fullstack Web Developer at <InlineCode>FLY</InlineCode>, where I craft intuitive<br/> user experiences. After hours, I build my own projects.</>
+    subline: <>I am a graduate bachelor from Jenderal Achmad Yani University, holding a Bachelor's degree in Informatics/Computer Science. I have a strong interest in web development and practical experience working on project-based website development. This includes overseeing the entire process from planning and implementation to testing, with a focus on delivering functional and user-centered web solutions.</>
+
 }
 
 const about = {
@@ -63,58 +65,242 @@ const about = {
         display: true
     },
     calendar: {
-        display: true,
+        display: false,
         link: 'https://cal.com'
     },
     intro: {
         display: true,
         title: 'Introduction',
-        description: <>Selene is a Jakarta-based design engineer with a passion for transforming complex challenges into simple, elegant design solutions. Her work spans digital interfaces, interactive experiences, and the convergence of design and technology.</>
+        description: <>I am a graduate bachelor from Universitas Jenderal Achmad Yani, holding a Bachelor's degree in Informatics/Computer Science. I have a strong interest in web development and practical experience working on project-based website development. This includes overseeing the entire process from planning and implementation to testing, with a focus on delivering functional and user-centered web solutions.</>
+    },
+    studies: {
+        display: true, // set to false to hide this section
+        title: 'Education',
+        institutions: [
+            {
+                name: 'University of Jenderal Achmad Yani',
+                timeStudies: '2020 - 2024',
+                degree: 'Bachelof of Computer',
+                description: <>During my time at Jenderal Achmad Yani University, I focused on learning and applying web-based software development. I practiced these skills through various projects, developing websites and enhancing my understanding of real-world software development.</>,
+            }
+        ]
     },
     work: {
         display: true, // set to false to hide this section
-        title: 'Work Experience',
+        title: 'Experience',
         experiences: [
             {
-                company: 'FLY',
-                timeframe: '2022 - Present',
-                role: 'Senior Design Engineer',
+                company: 'PERUMDA Tirta Raharja',
+                timeframe: '2023 - 2024',
+                role: 'Fullstack Website Developer (Intern)',
                 achievements: [
-                    <>Redesigned the UI/UX for the FLY platform, resulting in a 20% increase in user engagement and 30% faster load times.</>,
-                    <>Spearheaded the integration of AI tools into design workflows, enabling designers to iterate 50% faster.</>
+                    <>Led a Intern team in developing an IT Helpdesk website to support the company's IT operations.</>,
+                    <>Utilized CodeIgniter for back-end development and Bootstrap for the front-end, creating a robust and user-friendly platform.</>,
+                    // Kalimat pengantar untuk poin-poin
+                    <>Developed key features including:
+                        <div>
+                            <span>• Employee device management.</span>
+                            <br />
+                            <span>• Ticket submission system for faulty devices.</span>
+                            <br />
+                            <span>• Message management and live chat functionalities.</span>
+                            <br />
+                            <span>• Notifications and profile management system.</span>
+                        </div>
+                    </>
+
                 ],
                 images: [ // optional: leave the array empty if you don't want to display images
                     {
-                        src: '/images/projects/project-01/cover-01.jpg',
-                        alt: 'Once UI Project',
+                        src: '/images/projects/helpdesk-IT/helpdesk_site6.webp',
+                        alt: 'Helpdesk-IT Halaman Login',
+                        width: 16,
+                        height: 9,
+                    },
+                    {
+                        src: '/images/projects/helpdesk-IT/helpdesk_site.webp',
+                        alt: 'Helpdesk-IT Homepage Admin',
+                        width: 16,
+                        height: 9,
+                    },
+                    {
+                        src: '/images/projects/helpdesk-IT/helpdesk_site2.webp', // Ganti dengan path gambar kedua yang sesuai
+                        alt: 'Helpdesk-IT Homepage Karyawan', // Deskripsi gambar kedua
+                        width: 16,
+                        height: 9
+                    },
+                    {
+                        src: '/images/projects/helpdesk-IT/helpdesk_site3.webp', // Ganti dengan path gambar kedua yang sesuai
+                        alt: 'Helpdesk-IT Homepage Teknisi', // Deskripsi gambar kedua
+                        width: 16,
+                        height: 9
+                    },
+                    {
+                        src: '/images/projects/helpdesk-IT/helpdesk_site4.webp', // Ganti dengan path gambar kedua yang sesuai
+                        alt: 'Helpdesk-IT Halaman Ticketing Request', // Deskripsi gambar kedua
+                        width: 16,
+                        height: 9
+                    },
+                    {
+                        src: '/images/projects/helpdesk-IT/helpdesk_site5.webp', // Ganti dengan path gambar kedua yang sesuai
+                        alt: 'Helpdesk-IT Halaman Kelola Unit Kerja (Admin)', // Deskripsi gambar kedua
                         width: 16,
                         height: 9
                     }
                 ]
             },
             {
-                company: 'Creativ3',
-                timeframe: '2018 - 2022',
-                role: 'Lead Designer',
+                company: 'Djaman (Djamu Manunggal)',
+                timeframe: '2023 - 2024',
+                role: 'Fullstack Website Developer',
                 achievements: [
-                    <>Developed a design system that unified the brand across multiple platforms, improving design consistency by 40%.</>,
-                    <>Led a cross-functional team to launch a new product line, contributing to a 15% increase in overall company revenue.</>
+                    <>Digitalized traditional herbal medicine (jamu) products for Paguyuban Jamu Manunggal in Cimahi as part of the PKM-PI initiative under Merdeka Belajar from KEMENDIKBUDRISTEK.</>,
+                    <>Developed key features including:
+                        <div>
+                            <span>• Product management tools for efficient inventory control.</span>
+                            <br />
+                            <span>• Integration with third-party purchasing applications (WhatsApp Business) for seamless customer transactions.</span>
+                            <br />
+                            <span>• KNN-powered search function to enhance user experience and product discoverability.</span>
+                        </div>
+                    </>,
+                    <>Designed a minimalist and user-friendly interface, ensuring optimal accessibility across various devices for both customers and administrators.</>,
+                    <>Integrated Google Search Console, Bing Webmaster, and Google Analytics to monitor and improve SEO, increasing the website's visibility and traffic.</>,
+                    <>Utilized Bootstrap for front-end development and CodeIgniter 3 for back-end development, creating a robust and responsive platform.</>,
                 ],
-                images: [ ]
-            }
-        ]
-    },
-    studies: {
-        display: true, // set to false to hide this section
-        title: 'Studies',
-        institutions: [
-            {
-                name: 'University of Jakarta',
-                description: <>Studied software engineering.</>,
+                images: [
+                    {
+                        src: '/images/projects/djaman/djaman_site.webp', // Ganti dengan path gambar kedua yang sesuai
+                        alt: 'Djaman Client Homepage', // Deskripsi gambar kedua
+                        width: 16,
+                        height: 9
+                    },
+                    {
+                        src: '/images/projects/djaman/djaman_site2.webp', // Ganti dengan path gambar kedua yang sesuai
+                        alt: 'Djaman Shop Page', // Deskripsi gambar kedua
+                        width: 16,
+                        height: 9
+                    },
+                    {
+                        src: '/images/projects/djaman/djaman_site3.webp', // Ganti dengan path gambar kedua yang sesuai
+                        alt: 'Djaman Login Page', // Deskripsi gambar kedua
+                        width: 16,
+                        height: 9
+                    },
+                    {
+                        src: '/images/projects/djaman/djaman_site4.webp', // Ganti dengan path gambar kedua yang sesuai
+                        alt: 'Djaman Register Page', // Deskripsi gambar kedua
+                        width: 16,
+                        height: 9
+                    },
+                    {
+                        src: '/images/projects/djaman/djaman_site5.webp', // Ganti dengan path gambar kedua yang sesuai
+                        alt: 'Djaman Checkout Page', // Deskripsi gambar kedua
+                        width: 16,
+                        height: 9
+                    },
+                    {
+                        src: '/images/projects/djaman/djaman_site6.webp', // Ganti dengan path gambar kedua yang sesuai
+                        alt: 'Djaman Manage Product Page', // Deskripsi gambar kedua
+                        width: 16,
+                        height: 9
+                    }
+                ]
             },
             {
-                name: 'Build the Future',
-                description: <>Studied online marketing and personal branding.</>,
+                company: 'SIMADANG',
+                timeframe: '2022 - 2023',
+                role: 'Fullstack Website Developer',
+                achievements: [
+                    <>Developed a web-based Warehouse Management System using the MVC (Model View Controller) architecture.</>,
+                    <>Followed Scrum methodology, ensuring effective collaboration with the System Analyst Team, Quality Assurance Team, and Web Development Team.</>,
+                    <>Led a team of three developers within the Web Development Team, fostering a collaborative and productive environment.</>,
+                    <>Utilized Object-Oriented PHP, along with HTML, CSS, and MySQL for database management, to build a robust and efficient system.</>
+                ],
+                images: [
+                    {
+                        src: '/images/projects/simadang/simadang_site.webp', // Ganti dengan path gambar kedua yang sesuai
+                        alt: 'Simadang Login Page', // Deskripsi gambar kedua
+                        width: 16,
+                        height: 9
+                    },
+                    {
+                        src: '/images/projects/simadang/simadang_site2.webp', // Ganti dengan path gambar kedua yang sesuai
+                        alt: 'Simadang Homepage', // Deskripsi gambar kedua
+                        width: 16,
+                        height: 9
+                    },
+                    {
+                        src: '/images/projects/simadang/simadang_site3.webp', // Ganti dengan path gambar kedua yang sesuai
+                        alt: 'Simadang Manage Product Page', // Deskripsi gambar kedua
+                        width: 16,
+                        height: 9
+                    },
+                    {
+                        src: '/images/projects/simadang/simadang_site4.webp', // Ganti dengan path gambar kedua yang sesuai
+                        alt: 'Simadang Manage Purchase Page', // Deskripsi gambar kedua
+                        width: 16,
+                        height: 9
+                    }
+                ]
+            },
+            {
+                company: 'Valuble Media',
+                timeframe: '2022 - 2024',
+                role: 'Fullstack Website Developer',
+                achievements: [
+                    <>Served as Fullstack Web Developer, responsible for the creation, maintenance, and upgrade of a cryptocurrency news and education website.</>,
+                    <>Led the initial development phase using the Nicepage Plugin followed by a full redevelopment using WordPress for enhanced performance.</>,
+                    <>Conducted complex theme customization by thoroughly examining and modifying the theme’s source code to meet specific requirements.</>,
+                    <>Integrated OpenAI into the platform, enabling:
+                        <div>
+                            <span>• AI-powered chatbots for addressing crypto-related queries.</span>
+                            <br />
+                            <span>• Assistance for content creators in generating articles.</span>
+                        </div>
+                    </>,
+                    <>Implemented CoinGecko’s API for cryptocurrency-to-fiat conversions, providing users with real-time data.</>,
+                    <>Optimized SEO performance by leveraging OpenAI’s suggestions to improve article sentence structures and enhance search visibility.</>,
+                    <>Managed ongoing upgrades and issue resolution, ensuring smooth operation and performance of the website throughout the project.</>,
+                ],
+                images: [
+                    {
+                        src: '/images/projects/valuble/valuble_site.webp', // Ganti dengan path gambar kedua yang sesuai
+                        alt: 'Valuble Launch New Web', // Deskripsi gambar kedua
+                        width: 16,
+                        height: 9
+                    },
+                    {
+                        src: '/images/projects/valuble/valuble_site2.webp', // Ganti dengan path gambar kedua yang sesuai
+                        alt: 'Valuble Article Page', // Deskripsi gambar kedua
+                        width: 16,
+                        height: 9
+                    },
+                    {
+                        src: '/images/projects/valuble/valuble_site3.webp', // Ganti dengan path gambar kedua yang sesuai
+                        alt: 'Valuble Merchandise Page', // Deskripsi gambar kedua
+                        width: 16,
+                        height: 9
+                    },
+                    {
+                        src: '/images/projects/valuble/valuble_site4.webp', // Ganti dengan path gambar kedua yang sesuai
+                        alt: 'Valuble in Google Search Console', // Deskripsi gambar kedua
+                        width: 16,
+                        height: 9
+                    },
+                    {
+                        src: '/images/projects/valuble/valuble_site5.webp', // Ganti dengan path gambar kedua yang sesuai
+                        alt: 'Valuble in Google Analytics', // Deskripsi gambar kedua
+                        width: 16,
+                        height: 9
+                    },
+                    {
+                        src: '/images/projects/valuble/valuble_site6.webp', // Ganti dengan path gambar kedua yang sesuai
+                        alt: 'Valuble with AI Chatbot for Ask Question', // Deskripsi gambar kedua
+                        width: 16,
+                        height: 9
+                    }
+                ]
             }
         ]
     },
@@ -123,34 +309,40 @@ const about = {
         title: 'Technical skills',
         skills: [
             {
-                title: 'Figma',
-                description: <>Able to prototype in Figma with Once UI with unnatural speed.</>,
-                images: [
-                    {
-                        src: '/images/projects/project-01/cover-02.jpg',
-                        alt: 'Project image',
-                        width: 16,
-                        height: 9
-                    },
-                    {
-                        src: '/images/projects/project-01/cover-03.jpg',
-                        alt: 'Project image',
-                        width: 16,
-                        height: 9
-                    },
-                ]
+                title: 'Codeigniter',
+                level: <>Intermediate.</>,
             },
             {
-                title: 'Next.js',
-                description: <>Building next gen apps with Next.js + Once UI + Supabase.</>,
-                images: [
-                    {
-                        src: '/images/projects/project-01/cover-04.jpg',
-                        alt: 'Project image',
-                        width: 16,
-                        height: 9
-                    },
-                ]
+                title: 'PHP',
+                level: <>Intermediate</>,
+            },
+            {
+                title: 'MySQL/PhpMyAdmin',
+                level: <>Intermediate</>,
+            },
+            {
+                title: 'Model View Controller (MVC)',
+                level: <>Intermediate</>,
+            },
+            {
+                title: 'Software Design',
+                level: <>Intermediate</>,
+            },
+            {
+                title: 'UML Design',
+                level: <>Intermediate</>,
+            },
+            {
+                title: 'WordPress',
+                level: <>Intermediate</>,
+            },
+            {
+                title: 'AGILE Methodology',
+                level: <>Basic</>,
+            },
+            {
+                title: 'API Integration',
+                level: <>Basic</>,
             }
         ]
     }

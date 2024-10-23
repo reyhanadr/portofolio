@@ -89,8 +89,8 @@ export async function GET(request: Request) {
             </div>
         ),
         {
-            width: 1920,
-            height: 1080,
+            width: 2840,
+            height: 1451,
             fonts: [
                 {
                     name: 'Inter',

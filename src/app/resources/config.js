@@ -13,14 +13,14 @@ const routes = {
     '/':        true,
     '/about':   true,
     '/work':    true,
-    '/blog':    true,
-    '/gallery': true,
+    '/blog':    false,
+    '/gallery': false,
 }
 
 // Enable password protection on selected routes
 // Set password in pages/api/authenticate.ts
 const protectedRoutes = {
-    '/work/automate-design-handovers-with-a-figma-to-code-pipeline': true
+    // '/work/automate-design-handovers-with-a-figma-to-code-pipeline': true
 }
 
 const effects = {
@@ -30,14 +30,14 @@ const effects = {
 }
 
 const style = {
-    theme:       'dark',         // dark | light
-    neutral:     'gray',         // sand | gray | slate
-    brand:       'aqua',         // blue | indigo | violet | magenta | pink | red | orange | yellow | moss | green | emerald | aqua | cyan
-    accent:      'yellow',       // blue | indigo | violet | magenta | pink | red | orange | yellow | moss | green | emerald | aqua | cyan
+    theme:       'light',         // dark | light
+    neutral:     'slate',         // sand | gray | slate
+    brand:       'custom',         // blue | indigo | violet | magenta | pink | red | orange | yellow | moss | green | emerald | aqua | cyan
+    accent:      'custom',       // blue | indigo | violet | magenta | pink | red | orange | yellow | moss | green | emerald | aqua | cyan
     solid:       'contrast',     // color | contrast
     solidStyle:  'flat',         // flat | plastic
-    border:      'playful',      // rounded | playful | conservative
-    surface:     'translucent',  // filled | translucent
+    border:      'rounded',      // rounded | playful | conservative
+    surface:     'filled',  // filled | translucent
     transition:  'all'           // all | micro | macro
 }
 

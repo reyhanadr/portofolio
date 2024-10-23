@@ -210,6 +210,56 @@ export default function About(
                         </Flex>
                     )}
 
+                    { about.studies.display && (
+                        <>
+                            <Heading
+                                as="h2"
+                                id={about.studies.title}
+                                variant="display-strong-s"
+                                marginBottom="m">
+                                {about.studies.title}
+                            </Heading>
+                            <Flex
+                                direction="column"
+                                fillWidth gap="l" marginBottom="40">
+                                {about.studies.institutions.map((institution, index) => (
+                                    <Flex
+                                        key={`${institution.name}-${index}`}
+                                        fillWidth
+                                        direction="column">
+                                        
+                                        {/* Layout serupa dengan work timeframe */}
+                                        <Flex
+                                            fillWidth
+                                            justifyContent="space-between"
+                                            alignItems="flex-end"
+                                            marginBottom="4">
+                                            <Text
+                                                id={institution.name}
+                                                variant="heading-strong-l">
+                                                {institution.name}
+                                            </Text>
+                                            <Text
+                                                variant="heading-default-xs"
+                                                onBackground="neutral-weak">
+                                                {institution.timeStudies}
+                                            </Text>
+                                        </Flex>
+
+                                        {/* Deskripsi tetap dengan layout yang tidak berubah */}
+                                        <Text
+                                            variant="body-default-m"
+                                            // onBackground="brand-weak"
+                                            marginTop="xs" // Menambahkan margin di atas deskripsi
+                                            marginBottom='xs'>
+                                            {institution.description}
+                                        </Text>
+                                    </Flex>
+                                ))}
+                            </Flex>
+                        </>
+                    )}
+
                     { about.work.display && (
                         <>
                             <Heading
@@ -271,10 +321,12 @@ export default function About(
                                                         border="neutral-medium"
                                                         borderStyle="solid-1"
                                                         radius="m"
+                                                        margin="m" // Menambahkan margin antar gambar
+                                                        marginRight='40'
                                                         minWidth={image.width} height={image.height}>
                                                         <SmartImage
                                                             enlarge
-                                                            radius="m"
+                                                            radius="xs"
                                                             sizes={image.width.toString()}
                                                             alt={image.alt}
                                                             src={image.src}/>
@@ -288,90 +340,46 @@ export default function About(
                         </>
                     )}
 
-                    { about.studies.display && (
-                        <>
-                            <Heading
-                                as="h2"
-                                id={about.studies.title}
-                                variant="display-strong-s"
-                                marginBottom="m">
-                                {about.studies.title}
-                            </Heading>
-                            <Flex
-                                direction="column"
-                                fillWidth gap="l" marginBottom="40">
-                                {about.studies.institutions.map((institution, index) => (
-                                    <Flex
-                                        key={`${institution.name}-${index}`}
-                                        fillWidth gap="4"
-                                        direction="column">
-                                        <Text
-                                            id={institution.name}
-                                            variant="heading-strong-l">
-                                            {institution.name}
-                                        </Text>
-                                        <Text
-                                            variant="heading-default-xs"
-                                            onBackground="neutral-weak">
-                                            {institution.description}
-                                        </Text>
-                                    </Flex>
-                                ))}
-                            </Flex>
-                        </>
-                    )}
 
-                    { about.technical.display && (
-                        <>
-                            <Heading
-                                as="h2"
-                                id={about.technical.title}
-                                variant="display-strong-s" marginBottom="40">
-                                {about.technical.title}
-                            </Heading>
-                            <Flex
-                                direction="column"
-                                fillWidth gap="l">
-                                {about.technical.skills.map((skill, index) => (
-                                    <Flex
-                                        key={`${skill}-${index}`}
-                                        fillWidth gap="4"
-                                        direction="column">
-                                        <Text
-                                            variant="heading-strong-l">
-                                            {skill.title}
-                                        </Text>
-                                        <Text
-                                            variant="body-default-m"
-                                            onBackground="neutral-weak">
-                                            {skill.description}
-                                        </Text>
-                                        {skill.images.length > 0 && (
-                                            <Flex
-                                                fillWidth paddingTop="m" gap="12"
-                                                wrap>
-                                                {skill.images.map((image, index) => (
-                                                    <Flex
-                                                        key={index}
-                                                        border="neutral-medium"
-                                                        borderStyle="solid-1"
-                                                        radius="m"
-                                                        minWidth={image.width} height={image.height}>
-                                                        <SmartImage
-                                                            enlarge
-                                                            radius="m"
-                                                            sizes={image.width.toString()}
-                                                            alt={image.alt}
-                                                            src={image.src}/>
-                                                    </Flex>
-                                                ))}
-                                            </Flex>
-                                        )}
-                                    </Flex>
-                                ))}
-                            </Flex>
-                        </>
-                    )}
+                { about.technical.display && (
+                    <>
+                        <Heading
+                            as="h2"
+                            id={about.technical.title}
+                            variant="display-strong-s"
+                            marginBottom="40">
+                            {about.technical.title}
+                        </Heading>
+                        <Flex
+                            direction="column"
+                            fillWidth
+                            gap="l"> {/* Jarak antar skill */}
+                            
+                            {about.technical.skills.map((skill, index) => (
+                                <Flex
+                                    key={`${skill.title}-${index}`}
+                                    fillWidth
+                                    justifyContent="space-between" /* Mengatur jarak antara title dan level */
+                                    alignItems="center"
+
+                                    > {/* Memberikan margin bawah pada setiap skill */}
+                                    
+                                    <Text
+                                        variant="heading-strong-m">
+                                        • {skill.title} {/* Nama skill seperti PHP, Next.js */}
+                                    </Text>
+                                    
+                                    <Text
+                                        variant="body-default-m"
+                                        onBackground="neutral-weak">
+                                        {skill.level} {/* Level skill seperti Intermediate, Novice */}
+                                    </Text>
+                                </Flex>
+                            ))}
+                        </Flex>
+                    </>
+                )}
+
                 </Flex>
             </Flex>
         </Flex>
