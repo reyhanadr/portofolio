@@ -116,34 +116,40 @@ const createI18nContent = (t) => {
             title: t("about.technical.title"),
             skills: [
                 {
-                    title: 'Figma',
-                    description: <>{t("about.technical.skills.Figma.description")}</>,
-                    images: [
-                        {
-                            src: '/images/projects/project-01/cover-02.jpg',
-                            alt: 'Project image',
-                            width: 16,
-                            height: 9
-                        },
-                        {
-                            src: '/images/projects/project-01/cover-03.jpg',
-                            alt: 'Project image',
-                            width: 16,
-                            height: 9
-                        },
-                    ]
+                    title: 'Codeigniter',
+                    level: <>Intermediate.</>,
                 },
                 {
-                    title: 'Next.js',
-                    description: <>{t("about.technical.skills.Nextjs.description")}</>, // "." not accepted in next-intl namespace
-                    images: [
-                        {
-                            src: '/images/projects/project-01/cover-04.jpg',
-                            alt: 'Project image',
-                            width: 16,
-                            height: 9
-                        },
-                    ]
+                    title: 'PHP',
+                    level: <>Intermediate</>,
+                },
+                {
+                    title: 'MySQL/PhpMyAdmin',
+                    level: <>Intermediate</>,
+                },
+                {
+                    title: 'Model View Controller (MVC)',
+                    level: <>Intermediate</>,
+                },
+                {
+                    title: 'Software Design',
+                    level: <>Intermediate</>,
+                },
+                {
+                    title: 'UML Design',
+                    level: <>Intermediate</>,
+                },
+                {
+                    title: 'WordPress',
+                    level: <>Intermediate</>,
+                },
+                {
+                    title: 'AGILE Methodology',
+                    level: <>Basic</>,
+                },
+                {
+                    title: 'API Integration',
+                    level: <>Basic</>,
                 }
             ]
         }
