@@ -104,12 +104,10 @@ const createI18nContent = (t) => {
             title: 'Studies',
             institutions: [
                 {
-                    name: 'University of Jakarta',
-                    description: <>{t(`about.studies.institutions.University of Jakarta.description`)}</>,
-                },
-                {
-                    name: 'Build the Future',
-                    description: <>{t("about.studies.institutions.Build the Future.description")}</>,
+                    name: 'University of Jenderal Achmad Yani',
+                    timeStudies: '2020 - 2024',
+                    degree: 'Bachelof of Computer',
+                    description: <>During my time at Jenderal Achmad Yani University, I focused on learning and applying web-based software development. I practiced these skills through various projects, developing websites and enhancing my understanding of real-world software development.</>,
                 }
             ]
         },
