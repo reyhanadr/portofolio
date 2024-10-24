@@ -9,13 +9,13 @@ const person = {
     role:      'Fullstack Web Developer',
     avatar:    '/images/avatar.webp',
     location:  'Asia/Jakarta',        // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
-    languages: ['English', 'Bahasa']  // optional: Leave the array empty if you don't want to display languages
+    languages: ['English', 'Indonesian']  // optional: Leave the array empty if you don't want to display languages
 }
 
 const newsletter = {
     display: true,
-    title: <>Subscribe to {person.firstName}'s Newsletter</>,
-    description: <>I occasionally write about design, technology, and share thoughts on the intersection of creativity and engineering.</>
+    title: <>Contact Me</>,
+    description: <>You can reach me by email for Fast Response</>
 }
 
 const social = [
@@ -34,7 +34,7 @@ const social = [
     {
         name: 'X',
         icon: 'x',
-        link: '',
+        link: 'https://x.com/mstfkemal_pasha',
     },
     {
         name: 'Email',
@@ -80,7 +80,7 @@ const about = {
             {
                 name: 'University of Jenderal Achmad Yani',
                 timeStudies: '2020 - 2024',
-                degree: 'Bachelor of Computer',
+                degree: 'Bachelof of Computer',
                 description: <>During my time at Jenderal Achmad Yani University, I focused on learning and applying web-based software development. I practiced these skills through various projects, developing websites and enhancing my understanding of real-world software development.</>,
             }
         ]

@@ -186,7 +186,9 @@ export default function About(
                             <Flex
                                 className={styles.blockAlign}
                                 paddingTop="20" paddingBottom="8" gap="8" wrap>
-                                {social.map((item) => (
+                                {social
+                                .filter(item => item.name !== 'X') // Filter untuk menghapus item dengan name 'X'
+                                .map((item) => (
                                     item.link && (
                                         <Button
                                             key={item.name}

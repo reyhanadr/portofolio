@@ -87,10 +87,18 @@ export default function Project({ params }: WorkParams) {
 
 	const t = useTranslations();
 	const { person } = renderContent(t);
-
+	
+	// Ambil avatar dan simpan dalam array
 	const avatars = post.metadata.team?.map((person) => ({
-        src: person.avatar,
-    })) || [];
+		src: person.avatar,
+		href: person.linkedIn, // LinkedIn URL diambil dari person.linkedIn
+	})) || [];
+	
+	// Ambil LinkedIn URL dan simpan dalam array
+	const linkedin = post.metadata.team?.map((person) => ({
+		href: person.linkedIn, // LinkedIn URL diambil dari person.linkedIn
+	})) || [];
+	
 
 	return (
 		<Flex as="section"

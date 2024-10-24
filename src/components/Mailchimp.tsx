@@ -1,7 +1,7 @@
 "use client";
 
 import { mailchimp } from '@/app/resources'
-import { Button, Flex, Heading, Input, Text } from '@/once-ui/components';
+import { Button, Flex, Heading, IconButton, Text } from '@/once-ui/components';
 import { Background } from '@/once-ui/components/Background';
 import { useState } from 'react';
 import { useTranslations } from 'next-intl';
@@ -82,11 +82,11 @@ export const Mailchimp = (
                     maxWidth: 'var(--responsive-width-xs)'
                 }}
                 wrap="balance"
-                marginBottom="l"
+                marginBottom="m"
                 onBackground="neutral-medium">
                 {newsletter.description}
             </Text>
-            <form
+            {/* <form
                 style={{
                     width: '100%',
                     display: 'flex',
@@ -138,7 +138,14 @@ export const Mailchimp = (
                         </Flex>
                     </div>
                 </Flex>
-            </form>
+            </form> */}
+            <Button
+                // as="a" // Menyatakan bahwa Button akan berfungsi sebagai tautan
+                href={"mailto:reyhanadr@outlook.com"} // Menggunakan mailto untuk mengarahkan ke email
+                variant="primary"
+                size="m"
+                label="Contact Me"
+            />
         </Flex>
     )
 }

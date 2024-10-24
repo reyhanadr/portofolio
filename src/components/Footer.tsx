@@ -35,7 +35,9 @@ export const Footer = () => {
                 </Text>
                 <Flex
                     gap="16">
-                    {social.map((item) => (
+                    {social
+                    .filter(item => item.name !== 'X') // Filter untuk menghapus item dengan name 'X'
+                    .map((item) => (
                         item.link && (
                             <IconButton
                                 key={item.name}
