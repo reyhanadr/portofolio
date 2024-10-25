@@ -17,9 +17,7 @@ export async function generateMetadata(
 	const title = home.title;
 	const description = home.description;
 	const ogURL = `https://${baseURL}/og?title=${encodeURIComponent(title)}`;
-	const ogImage = home.image 
-		? `https://${baseURL}${home.image}` 
-		: `https://${baseURL}/og?title=${encodeURIComponent(title)}`;
+	const ogImage = `https://${baseURL}${home.image}`;
 
 
 	return {

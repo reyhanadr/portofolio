@@ -48,7 +48,7 @@ const home = {
     title: `${person.name}'s Portfolio`,
     description: `Portfolio website showcasing my work as a ${person.role}`,
     headline: <>Fullstack Web Developer</>,
-    image: '/images/reyhanadrPortofolioBanner.webp',
+    image: '/images/avatar.webp',
     // subline: <>I'm Reyhanadr, a Fullstack Web Developer at <InlineCode>FLY</InlineCode>, where I craft intuitive<br/> user experiences. After hours, I build my own projects.</>
     subline: <>I am a graduate bachelor from Jenderal Achmad Yani University, holding a Bachelor's degree in Informatics/Computer Science. I have a strong interest in web development and practical experience working on project-based website development. This includes overseeing the entire process from planning and implementation to testing, with a focus on delivering functional and user-centered web solutions.</>
 }
