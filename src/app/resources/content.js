@@ -14,7 +14,7 @@ const person = {
 
 const newsletter = {
     display: true,
-    title: <>Contact Me</>,
+    title: <>Contact </>,
     description: <>You can reach me by email for Fast Response</>
 }
 
@@ -335,6 +335,14 @@ const about = {
             {
                 title: 'WordPress',
                 level: <>Intermediate</>,
+            },
+            {
+                title: 'Manage Hosting',
+                level: <>Intermediate</>,
+            },
+            {
+                title: 'Next.js',
+                level: <>Novice</>,
             },
             {
                 title: 'AGILE Methodology',
