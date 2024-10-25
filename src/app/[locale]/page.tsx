@@ -32,6 +32,7 @@ export async function generateMetadata(
 				{
 					url: ogURL,
 					alt: title,
+					images: [ogImage],
 				},
 			],
 		},
