@@ -1,4 +1,8 @@
 import { IconType } from 'react-icons';
+import { FiExternalLink } from "react-icons/fi";
+
+
+
 
 import {
 	HiChevronUp,
@@ -34,7 +38,7 @@ import {
 	FaLinkedin,
 	FaXTwitter,
 	FaAddressBook,
-	FaPhone
+	FaPhone, 
 } from "react-icons/fa6";
 
 export const iconLibrary: Record<string, IconType> = {
@@ -66,4 +70,5 @@ export const iconLibrary: Record<string, IconType> = {
 	x: FaXTwitter,
 	address: FaAddressBook,
 	phone:FaPhone,
+	FaLink:FiExternalLink ,
 };

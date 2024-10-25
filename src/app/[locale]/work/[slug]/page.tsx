@@ -1,7 +1,7 @@
 import { notFound } from 'next/navigation'
 import { CustomMDX } from '@/components/mdx'
 import { formatDate, getPosts } from '@/app/utils'
-import { AvatarGroup, Button, Flex, Heading, SmartImage, Text } from '@/once-ui/components'
+import { AvatarGroup, Button, Flex, Heading, SmartImage, Text, SmartLink, Icon } from '@/once-ui/components'
 import { baseURL, renderContent } from '@/app/resources';
 import { routing } from '@/i18n/routing';
 import { unstable_setRequestLocale } from 'next-intl/server';
@@ -82,7 +82,6 @@ export default function Project({ params }: WorkParams) {
 	if (!post) {
 		notFound()
 	}
-
 	const t = useTranslations();
 	const { person } = renderContent(t);
 	
@@ -166,6 +165,13 @@ export default function Project({ params }: WorkParams) {
 						{formatDate(post.metadata.publishedAt)}
 					</Text>
 				</Flex>
+				<SmartLink href={post.metadata.link} target="_blank" rel="noopener noreferrer">
+					Look the Web
+					<Icon
+						name="FaLink"
+						onBackground="brand-weak"
+						size="xs"/>
+				</SmartLink>
 				<CustomMDX source={post.content} />
 			</Flex>
 		</Flex>
