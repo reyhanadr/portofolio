@@ -30,9 +30,8 @@ export async function generateMetadata(
 			url: `https://${baseURL}/${locale}`,
 			images: [
 				{
-					url: ogURL,
+					url: ogImage,
 					alt: title,
-					images: [ogImage],
 				},
 			],
 		},
