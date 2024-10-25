@@ -57,6 +57,8 @@ const createI18nContent = (t) => {
         label: t("about.label"),
         title: t("about.label"),
         description: t("about.description", {name: person.name, role: person.role, location: person.location}),
+        image: t("about.image"),
+
         tableOfContent: {
             display: true,
             subItems: true

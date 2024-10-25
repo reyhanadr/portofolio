@@ -57,6 +57,7 @@ const about = {
     label: 'About',
     title: 'About me',
     description: `Meet ${person.name}, ${person.role} from ${person.location}`,
+    image: '/images/reyhanadrPortofolioBanner.webp',
     tableOfContent: {
         display: true,
         subItems: true
