@@ -65,8 +65,6 @@ export function generateMetadata({ params: { slug, locale } }: WorkParams) {
 			images: [
 				{
 					url: ogImage,
-					width: 1920, // Lebar gambar dalam piksel
-					height: 720, // Tinggi gambar dalam piksel
 				},
 			],
 		},

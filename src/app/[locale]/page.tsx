@@ -16,7 +16,11 @@ export async function generateMetadata(
     const { home } = renderContent(t);
 	const title = home.title;
 	const description = home.description;
-	const ogImage = `https://${baseURL}/og?title=${encodeURIComponent(title)}`;
+	const ogURL = `https://${baseURL}/og?title=${encodeURIComponent(title)}`;
+	const ogImage = home.image 
+		? `https://${baseURL}${home.image}` 
+		: `https://${baseURL}/og?title=${encodeURIComponent(title)}`;
+
 
 	return {
 		title,
@@ -28,10 +32,8 @@ export async function generateMetadata(
 			url: `https://${baseURL}/${locale}`,
 			images: [
 				{
-					url: ogImage,
+					url: ogURL,
 					alt: title,
-					width: 1920, // Lebar gambar dalam piksel
-					height: 720, // Tinggi gambar dalam piksel
 				},
 			],
 		},
