@@ -30,6 +30,8 @@ export async function generateMetadata(
 				{
 					url: ogImage,
 					alt: title,
+					width: 1920, // Lebar gambar dalam piksel
+					height: 720, // Tinggi gambar dalam piksel
 				},
 			],
 		},
