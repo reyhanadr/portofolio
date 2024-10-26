@@ -1,4 +1,4 @@
-const baseURL = 'portofolio-topaz-mu.vercel.app'
+const baseURL = 'reyhanadr.com'
 
 // Enable localization
 const i18n = false;
