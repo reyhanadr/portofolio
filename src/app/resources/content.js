@@ -72,7 +72,7 @@ const about = {
     intro: {
         display: true,
         title: 'Introduction',
-        description: <>I am a graduate bachelor from Universitas Jenderal Achmad Yani, holding a Bachelor's degree in Informatics/Computer Science. I have a strong interest in web development and practical experience working on project-based website development. This includes overseeing the entire process from planning and implementation to testing, with a focus on delivering functional and user-centered web solutions.</>
+        description: <>I am a graduate bachelor from Jenderal Achmad Yani University, holding a Bachelor's degree in Informatics/Computer Science. I have a strong interest in web development and practical experience working on project-based website development. This includes overseeing the entire process from planning and implementation to testing, with a focus on delivering functional and user-centered web solutions.</>
     },
     studies: {
         display: true, // set to false to hide this section
