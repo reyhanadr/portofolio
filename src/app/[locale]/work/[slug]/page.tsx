@@ -165,13 +165,17 @@ export default function Project({ params }: WorkParams) {
 						{formatDate(post.metadata.publishedAt)}
 					</Text>
 				</Flex>
-				<SmartLink href={post.metadata.link} target="_blank" rel="noopener noreferrer">
-					Look the Web
-					<Icon
-						name="FaLink"
-						onBackground="brand-weak"
-						size="xs"/>
-				</SmartLink>
+				{post.metadata.link ? (
+					<SmartLink href={post.metadata.link} target="_blank" rel="noopener noreferrer">
+						Look the Web
+						<Icon
+							name="FaLink"
+							onBackground="brand-weak"
+							size="xs"
+						/>
+					</SmartLink>
+				) : null}
+
 				<CustomMDX source={post.content} />
 			</Flex>
 		</Flex>
